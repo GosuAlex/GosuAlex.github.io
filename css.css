@@ -1,0 +1,486 @@
+/* 
+Fix nav btn text align with icon
+*/
+
+:root {
+    --RC: "Roboto Condensed", cursive;
+    /*Classy header*/
+    --R: "Roboto", cursive;
+    /*Text writing hard marks*/
+    --HM: "Hind Madurai", cursive;
+    /*Ubuntu but classy*/
+    --goldBright: linear-gradient(90deg, #FFF48B, #C0A562);
+    --goldSubtle: linear-gradient(90deg, #E4C27A, #C2A569);
+    --dark: #26252B;
+    --grey: #3F3C46;
+    --goldText: #C2A569;
+
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    background-color: var(--dark);
+
+}
+
+/* Nav  ----  ----  ----  ----  ----  ----  */
+
+.nav {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  font-family: var(--HM);
+  font-size: 20px;
+  list-style: none;
+}
+
+.menu {
+  width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.item:nth-child(1) {
+  border-bottom: 1px solid white;
+}
+
+.item:nth-child(2) {
+  border-bottom: 1px solid white;
+}
+
+.btn {
+  display: block;
+  padding: 8px 10px;
+  background: var(--goldText);
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--goldSubtle);
+}
+
+.btn i {
+  min-width: 25px;
+  text-align:center;
+  margin-left: 5px;
+}
+
+/* .btn:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: white;
+  left: 20px;
+  bottom: -7px;
+  transform: rotate(45deg);
+} */
+
+.btn i {
+  margin-right: 10px;
+}
+
+.subItems {
+  background: #333;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+
+.subItems a {
+  display: block;
+  padding: 10px 16px;
+  color: white;
+  font-size: 16px;
+  margin: 4px 0;
+  position: relative;
+  text-decoration: none;
+}
+
+.subItems a:nth-child(1) {
+  border-bottom: 1px solid #111;
+}
+
+.subItems a:nth-child(2) {
+  border-bottom: 1px solid #111;
+}
+/* 
+.subItems a:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #0575e6;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.subItems a:hover:before {
+  opacity: 1;
+}
+*/
+.subItems a:hover {
+  background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.item:target .subItems {
+  max-height: 10em;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+}
+
+.more a {
+  font-size: 28px;
+  min-width: 60px;
+  text-align: center;
+}
+
+#email {
+  font-size: 16px;
+  justify-content: center;
+}
+
+.subItems .more a{
+  border-bottom: none;
+}
+
+/* Header  ----  ----  ----  ----  ----  ----  */
+
+header {
+  height: 90vh;
+}
+/* 
+.hero-image {
+    background: url('./images/Color.svg') no-repeat;
+    /* background-size: cover; 
+    width: 107%;
+    height: 120%;
+    top: -204px;
+    left: -87px;
+    position: absolute;
+    z-index: -1;
+    /* object-fit: contain; 
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%, auto;
+} */
+
+#goldWaves {
+  background: url('./images/Waves.svg') no-repeat;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 7%;
+  left: -10%;
+  z-index: -1;
+  background-size: 110% 110%, auto;
+  background-position: center center;
+}
+
+#goldStripe {
+  background: url('./images/Stripe.svg') no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  z-index: -1;
+  background-size: 105% 105%, auto;
+  background-position: center center;
+}
+
+.banner {
+  margin-top: 15%;
+  padding-top: 30px;
+  width: 100%;
+  height: 370px;
+  background-color: var(--grey);
+  border-top: 3px solid var(--goldText);
+  border-bottom: 3px solid var(--goldText);
+}
+
+.circle {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--goldSubtle);
+}
+
+#profile {
+  margin: 3%;
+  width: 94%;
+  border-radius: 50%;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: var(--RC);
+  font-size: 60px;
+  text-align: center;
+  background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: var(--RC);
+  font-size: 40px;
+  text-align: center;
+  background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro {
+  margin-top: 80px;
+  display:flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.intro h2 {
+  text-align: left;
+}
+
+pre {
+  color: var(--goldText);
+  font-size: 20px;
+  font-family: var(--R);
+  margin-right: 40px;
+
+}
+
+.rowFlex {
+  display:flex;
+  flex-direction: column;
+}
+
+.contact {
+  /* margin-top: -3px; */
+  margin: 5%;
+  background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 3px;
+  font-family: var(--R);
+  font-size: 20px;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact a:hover {
+  background:white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact i {
+  padding-top: 15px;
+  padding-right: 15px;
+  font-size: 30px;
+  max-width: 40px;
+}
+
+
+/* Section 1  ----  ----  ----  ----  ----  ----  */
+
+.headline {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  height: 10vh;
+  padding-top: 30px;
+  width: 100%;
+  height: 200px;
+  background-color: var(--grey);
+  border-top: 3px solid var(--goldText);
+  border-bottom: 3px solid var(--goldText);
+}
+
+.sec1 {
+  display: flex;
+}
+
+.sideLeft {
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.sideRight {
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.infoBox {
+  margin-top: 20%;
+  width: 80%;
+  height: 60%;
+  /* background-color: var(--grey); */
+  border-radius: 50px;
+}
+
+.infoText {
+  margin-top: 10%;
+}
+
+/* Taber  ----  ----  ----  ----  ----  ----  */
+
+.taber {
+  margin: auto;
+  display: flex;
+  margin-right: 50px;
+  border-radius: 20px;
+  justify-content: space-between;
+  position: relative;
+  font-family: var(--R);
+  font-size: 20px;
+}
+
+
+@keyframes shockwave {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(10);
+  }
+}
+
+.tab {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border: 2px solid var(--goldText);
+  border-radius: 50px;  
+  color: var(--goldText);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.tab span {
+  position: absolute;
+  border-radius: 50%;
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-color: #fff;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: shockwave 1s;
+  opacity: 0;
+}
+
+.taber a:hover,
+.taber a.active {
+  color: #fff;
+  border-color: #fff; 
+}  
+/* 
+color: var(--dark);
+background: var(--goldBright);  
+*/
+.btnGoTo {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  min-width: 100px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 10px;  
+  color: black;
+  background-color: var(--goldText);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.FCC {
+  margin-top: 20%;
+  margin-left: 20%;
+}
+
+.FCC a:nth-child(2) {
+  position: relative;
+  top: 5%;
+  left: 0%;
+}
+
+.FCC a:nth-child(3) {
+  position: relative;
+  top: -5%;
+  left: 20%;
+}
+
+.FCC a:nth-child(4) {
+  position: relative;
+  top: -15%;
+  left: 40%;
+}
+
+
+
+
+.sideLeft img {
+  width: 50%;
+  height: 20%;
+}
+
+/* Footer  ----  ----  ----  ----  ----  ----  */
+
+#goldWaves2 {
+  background: url('./images/Waves2.svg') no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 0px;
+  left: -0%;
+  background-size: 100% 100%, auto;
+  background-position: center center;
+  z-index: -1;
+}
+
+footer {
+    height: 375px;
+    /* background-color: var(--grey); */
+}
