@@ -38,6 +38,7 @@ body {
   font-family: var(--HM);
   font-size: 20px;
   list-style: none;
+  z-index: 99;
 }
 
 .menu {
@@ -386,13 +387,14 @@ pre {
   width: 180px;
   height: 50px;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: var(--RC);
   border: 2px solid var(--goldText);
   border-radius: 50px;  
   color: var(--goldText);
   position: relative;
   overflow: hidden;
   text-decoration: none;
+  transition: .3s ease;
 }
 
 .tab span {
@@ -413,6 +415,7 @@ pre {
 .taber a.active {
   color: #fff;
   border-color: #fff; 
+  transition: .3s ease;
 }  
 /* 
 color: var(--dark);
@@ -425,19 +428,36 @@ background: var(--goldBright);
   padding: 10px;
   min-width: 100px;
   font-size: 20px;
-  font-family: sans-serif;
-  border-radius: 10px;  
-  color: black;
-  background-color: var(--goldText);
+  font-family: var(--HM);
+  border-radius: 8px;  
+  background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* background-color: var(--goldText); */
+
   position: relative;
   overflow: hidden;
   text-decoration: none;
   font-weight: bold;
 }
 
+.btnGoTo i {
+  font-size: 30px;
+  vertical-align: middle;
+  padding-bottom: 3px;
+  padding-right: 10px;
+}
+
+.btnGoTo:hover {
+  background:white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .FCC {
   margin-top: 20%;
   margin-left: 20%;
+
 }
 
 .FCC a:nth-child(2) {
@@ -470,17 +490,51 @@ background: var(--goldBright);
 
 #goldWaves2 {
   background: url('./images/Waves2.svg') no-repeat;
+  
   width: 100%;
   height: 100%;
   position: relative;
-  bottom: 0px;
-  left: -0%;
-  background-size: 100% 100%, auto;
+  bottom: 100%;
+  left: 0%;
+  background-size: 300% 300%, auto;
   background-position: center center;
   z-index: -1;
+  overflow: hidden !important;
 }
 
 footer {
-    height: 375px;
-    /* background-color: var(--grey); */
+    height: 100px;
+    background-color: var(--grey);
+    border-top: 3px solid var(--goldText);
+    width: 100%;
+}
+
+footer h2 {
+  margin-top: 20px;
+  font-family: var(--RC);
+  font-size: 30px;
+  text-align: center;
+  background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer h2 i {
+  margin-left: 10px;
+}
+
+footer h2:hover {
+  background:white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 1000px;
+  height: 100vh;
 }

@@ -26,3 +26,10 @@ $("html").on("click", ".tab", function(evt) {
     top: y
   });
 });
+
+/* Swipeer ---- ---- ---- ---- ---- ---- ----  */
+var mySwiper = new Swiper ('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true
+});
