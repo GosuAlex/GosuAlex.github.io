@@ -169,46 +169,6 @@ body {
 header {
   height: 90vh;
 }
-/* 
-.hero-image {
-    background: url('./images/Color.svg') no-repeat;
-    /* background-size: cover; 
-    width: 107%;
-    height: 120%;
-    top: -204px;
-    left: -87px;
-    position: absolute;
-    z-index: -1;
-    /* object-fit: contain; 
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%, auto;
-} */
-
-#goldWaves {
-  background: url('./images/Waves.svg') no-repeat;
-  width: 120%;
-  height: 120%;
-  position: absolute;
-  top: 7%;
-  left: -10%;
-  z-index: -1;
-  background-size: 110% 110%, auto;
-  background-position: center center;
-}
-
-#goldStripe {
-  background: url('./images/Stripe.svg') no-repeat;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 80%;
-  left: 0%;
-  z-index: -1;
-  background-size: 105% 105%, auto;
-  background-position: center center;
-}
 
 .banner {
   margin-top: 15%;
@@ -488,25 +448,11 @@ background: var(--goldBright);
 
 /* Footer  ----  ----  ----  ----  ----  ----  */
 
-#goldWaves2 {
-  background: url('./images/Waves2.svg') no-repeat;
-  
-  width: 100%;
-  height: 100%;
-  position: relative;
-  bottom: 100%;
-  left: 0%;
-  background-size: 300% 300%, auto;
-  background-position: center center;
-  z-index: -1;
-  overflow: hidden !important;
-}
-
 footer {
-    height: 100px;
-    background-color: var(--grey);
-    border-top: 3px solid var(--goldText);
-    width: 100%;
+  height: 100px;
+  background-color: var(--grey);
+  border-top: 3px solid var(--goldText);
+  width: 100%;
 }
 
 footer h2 {
@@ -537,4 +483,73 @@ footer h2:hover {
   width: 100%;
   height: 1000px;
   height: 100vh;
+}
+
+/* Waves  ----  ----  ----  ----  ----  ----  */
+
+/* 
+.hero-image {
+    background: url('./images/Color.svg') no-repeat;
+    /* background-size: cover; 
+    width: 107%;
+    height: 120%;
+    top: -204px;
+    left: -87px;
+    position: absolute;
+    z-index: -1;
+    /* object-fit: contain; 
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%, auto;
+} */
+/* 
+#goldWaves {
+  background: url('./images/Waves.svg') no-repeat;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 7%;
+  left: -10%;
+  z-index: -1;
+  background-size: 110% 110%, auto;
+  background-position: center center;
+}
+*/
+#goldWaves {
+  background: url('./images/Waves.svg') no-repeat;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  /* top: 7%; */
+  left: -5%;
+  z-index: -1;
+  background-size: 110% 110%, auto;
+  background-position: center center;
+} 
+
+#goldStripe {
+  background: url('./images/Stripe.svg') no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  z-index: -1;
+  background-size: 105% 105%, auto;
+  background-position: center center;
+}
+
+#goldWaves2 {
+  background: url('./images/Waves2.svg') no-repeat;
+  
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 100%;
+  left: 0%;
+  background-size: 300% 300%, auto;
+  background-position: center center;
+  z-index: -1;
+  overflow: hidden !important;
 }
