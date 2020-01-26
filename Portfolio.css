@@ -138,6 +138,7 @@ p {
 /* Section 1  ----  ----  ----  ----  ----  ----  */
 
 .headline {
+  position: relative;
   display: block;
   text-align: center;
   justify-content: center;
@@ -179,14 +180,14 @@ p {
 /* Tabs  ----  ----  ----  ----  ----  ----  */
 
 .taber {
-  margin: auto;
   display: flex;
   margin-right: 50px;
   border-radius: 20px;
-  justify-content: space-evenly;
+  justify-content: space-between;
   position: relative;
   font-family: var(--R);
   font-size: 20px;
+  position: relative;
 }
 
 
@@ -202,22 +203,26 @@ p {
 }
 
 .tab {
+  position: absolute;
+  overflow: visible;
+  top: 50%;
+  transform: translateY(185%);
+  margin: -75px 50px;
   display: inline-block;
   text-align: center;
   box-sizing: border-box;
   padding: 10px;
-  width: 180px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   font-size: 20px;
   font-family: var(--RC);
+  background-color: var(--dark);
   border: 2px solid var(--goldText);
-  border-radius: 50px;  
+  border-radius: 20px;   
   color: var(--goldText);
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  position: relative;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  */
   overflow: hidden;
   text-decoration: none;
   transition: .3s ease;
