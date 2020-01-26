@@ -177,6 +177,10 @@ p {
   /* border-radius: 50px; */
 }
 
+#section2 {
+  min-height: 90vh;
+}
+
 /* Tabs  ----  ----  ----  ----  ----  ----  */
 
 .taber {
@@ -474,7 +478,7 @@ footer h2:hover {
     margin-top: 50px;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
   }
 
   .sideLeft {
