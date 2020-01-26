@@ -10,6 +10,7 @@
     --dark: #26252B;
     --grey: #3F3C46;
     --goldText: #C2A569;
+    --goldTextBright: rgb(231, 201, 140);
 
 
 }
@@ -64,8 +65,11 @@ h1 {
   font-size: 60px;
   text-align: center;
   background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  background: -moz-linear-gradient(#FFF48B, #C0A562);
+  background: linear-gradient(#FFF48B, #C0A562);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h2 {
@@ -75,8 +79,11 @@ h2 {
   font-size: 40px;
   text-align: center;
   background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  background: linear-gradient(#FFF48B, #C0A562);
+  background: -moz-linear-gradient(#FFF48B, #C0A562);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .intro {
@@ -109,22 +116,30 @@ p {
 
 .contact {
   margin-top: -3px;
-  background: -webkit-linear-gradient(#FFF48B, #C0A562);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   padding: 3px;
   font-family: var(--R);
   font-size: 20px;
 }
 
-.contact a {
+a {
   text-decoration: none;
+  background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  background: linear-gradient(#FFF48B, #C0A562);
+  background: -moz-linear-gradient(#FFF48B, #C0A562);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: var(--goldText);
+  background-clip: text;
 }
 
-.contact a:hover {
+a:visited, a:link {
+  -webkit-text-fill-color: var(--goldText);
+}
+
+a:hover {
   background:white;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
+  background-clip: text;
 }
 
 .contact i {
@@ -175,6 +190,13 @@ p {
 
   /* background-color: var(--grey); */
   /* border-radius: 50px; */
+}
+
+.infoBox a:hover {
+  background:white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  background-clip: text;
 }
 
 #section2 {
@@ -266,8 +288,11 @@ background: var(--goldBright);
   font-family: var(--HM);
   border-radius: 8px;  
   background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  background: -moz-linear-gradient(#FFF48B, #C0A562);
+  background: linear-gradient(#FFF48B, #C0A562);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   /* background-color: var(--goldText); */
 
   position: relative;
@@ -287,6 +312,7 @@ background: var(--goldBright);
   background:white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .FCC {
@@ -333,8 +359,11 @@ footer h2 {
   font-size: 30px;
   text-align: center;
   background: -webkit-linear-gradient(#FFF48B, #C0A562);
+  background: -moz-linear-gradient(#FFF48B, #C0A562);
+  background: linear-gradient(#FFF48B, #C0A562);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 footer a {
@@ -349,6 +378,7 @@ footer h2:hover {
   background:white;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 
