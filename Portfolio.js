@@ -34,3 +34,36 @@ var mySwiper = new Swiper ('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+/* --- */
+
+function emailObfuscator() { 
+  //http://www.jottings.com/obfuscator/
+  const coded = "LNHsb_nf6@MbfLnNq.HbL";
+  const key = "ZUDQLugMCfzbqaPec8RO9kWwpFrA5EITjXnSBH3xivy4Km7shGtJol12d0VY6N";
+  const shift = coded.length;
+  let link = "";
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      let ltr = coded.charAt(i);
+      link += (ltr);
+    }
+    else {     
+      let ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length;
+      link += (key.charAt(ltr));
+    }
+  }
+  link = "mailto:" + link;
+
+  const email = document.createElement("a");
+  email.setAttribute('href', link);
+  email.setAttribute("id", "emailLink");
+  email.appendChild(document.createTextNode("E-Mail"));
+  document.getElementById("myEmail").appendChild(email);
+
+  const icon = document.createElement("i");
+  icon.setAttribute("class", "fas fa-envelope");
+  document.getElementById("emailLink").insertAdjacentElement('afterbegin', icon);
+}
+
+emailObfuscator();
