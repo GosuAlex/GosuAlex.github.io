@@ -218,6 +218,14 @@ a:hover {
   background-clip: text;
 }
 
+#algo-vis-img {
+  border: solid 4px rgb(92, 92, 92);
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  max-width: 650px;
+}
+
 #section2 {
   min-height: 90vh;
 }
